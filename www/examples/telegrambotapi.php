@@ -39,25 +39,25 @@ $messageTextLower = mb_strtolower($message_text);
 
 // Если первое сообщение
 if($messageTextLower=='/start'){
-    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Привет, я бот');
+    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'salom, men Botman');
     exit;
 }
 
 // Если пользователь напишет Тест, то выведем ответ
-if($messageTextLower=='тест'){
-    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Ответ от бота на сообщение тест. <b>Вы можете предусмотреть свои ответы на любые сообщения в формате HTML.</b>');
+if($messageTextLower=='qalesz'){
+    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Daxshatman');
     exit;
 }
 
 // Если пользователь напишет привет
-if($messageTextLower=='привет'){
-    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Привет');
+if($messageTextLower=='salom'){
+    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'salom');
     exit;
 }
 
 // пример ответа
-if($messageTextLower=='пример ответа'){
-    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Ответ на сообщение', '', $message_id);
+if($messageTextLower=='nma gap'){
+    sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Tinchko', '', $message_id);
     exit;
 }
 
@@ -72,6 +72,6 @@ if($messageTextLower=='пример кнопки'){
 }
 
 // Если не предусмотрен ответ
-sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'Ответ не предусмотрен');
+sTelegram::instance()->sendMessage($bot_token, $message_chat_id, 'bunday soz menga kiritilmagan');
 exit;
 
