@@ -9,7 +9,7 @@ require_once __DIR__ .'/../system/defines.php';
 require_once __DIR__ .'/../system/vendor/autoload.php';
 
 // Получим токен бота из файла
-$bot_token = '5053084982:AAEtdPM00KhIbG_oIrwcsjCSndc3jzoixI0';
+$bot_token = file_get_contents(__DIR__.'/bot_token.txt');
 
 
 // Подключаемся к апи
